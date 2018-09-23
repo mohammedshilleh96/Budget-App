@@ -1,0 +1,224 @@
+/***************************** General rules *******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  font-weight: 400;
+}
+
+span {
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+/***************************************************************************/
+/*************************** Header Section ********************************/
+.budget {
+  flex-flow: column nowrap;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../Images/back.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 300px;
+  height: 40vh;
+
+  color: #fff;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.budget-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.budget-value {
+  font-size: 46px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.budget-banner {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  color: #444;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.budget-income {
+  background-color: #28b9b5;
+  margin-bottom: 10px;
+}
+
+.budget-expenses {
+  background-color: #ff5049;
+}
+
+.budget-income-value,
+.budget-expenses-value {
+  color: #fff;
+  font-weight: normal;
+}
+
+/**************************************************************************/
+/**************************** Form Section ********************************/
+.form {
+  flex-flow: row nowrap;
+  min-height: 80px;
+  height: 10vh;
+  background-color: #bebeb573;
+}
+
+.form-input {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  height: 50%;
+  margin-right: 15px;
+  outline: none;
+  padding: 10px;
+}
+
+.form-input-type {
+  width: 3%;
+  padding: 5px;
+}
+
+.form-input-description {
+  width: 20%;
+}
+
+.form-input-value {
+  width: 7%;
+  margin-right: 25px;
+}
+
+.form-submit {
+  width: 40px;
+  color: #28b9b5;
+  border-radius: 50%;
+  border: 2px solid #28b9b5;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  color: #f7f7f7;
+  background-color: #28b9b5;
+  border: 2px solid #e7e7e7;
+}
+
+.form-input-type:focus,
+.form-input-text:focus,
+.form-input-value:focus {
+  border: 1px solid #28b9b5;
+}
+
+/********************************************************************************/
+/************************** Income and expenses *********************************/
+.details {
+  width: 70%;
+  margin: 5% auto;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.income {
+  width: 40%;
+}
+
+.income > p {
+  color: #28b9b5;
+  margin-bottom: 10px;
+}
+
+.income-item {
+  padding: 10px;
+}
+
+.income-item td:nth-child(1) {
+  width: 70%;
+}
+
+.income-item td:nth-child(2) {
+  color: #28b9b5;
+  width: 20%;
+}
+
+.income-item-remove-button {
+  display: none;
+}
+
+/********************************************************************/
+/************************** Expenses section ***********************/
+.expenses {
+  width: 50%;
+}
+
+.expenses > p {
+  color: #ff5049;
+  margin-bottom: 10px;
+}
+
+.expenses-item {
+  padding: 10px;
+}
+
+.expenses-item-description {
+  width: 60%;
+}
+
+.expenses-item-value {
+  width: 20%;
+}
+
+.expenses-item-percentage {
+  width: 10%;
+  padding-right: 0;
+}
+
+.expenses-item td:nth-child(1) {
+  width: 40%;
+}
+
+.remove-button {
+  display: none;
+}

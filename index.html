@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget app</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- The header section with budget information summary -->
+    <header class="budget flex-center">
+        <p class="budget-title">Available Budget in September 2018:</p>
+        <p class="budget-value">+ 1,941.25</p>
+        <div class="budget-banner budget-income">
+            <span>INCOME</span>
+            <span class="budget-income-value">+ 2,500.00</span>
+        </div>
+        <div class="budget-banner budget-expenses">
+            <span>EXPENSES</span>
+            <span class="budget-expenses-value">- 558.25</span>
+        </div>
+    </header>
+
+    <!-- The form section that adds an income or expense -->
+    <section class="form flex-center">
+        <select class="form-input form-input-type">
+            <option disabled selected value="empty"></option>
+            <option value="income">+</option>
+            <option value="expenses">-</option>
+        </select>
+        <input type="text" placeholder="Add description" class="form-input form-input-description">
+        <input type="number" placeholder="Value" class="form-input form-input-value">
+        <button class="form-input form-submit">
+            <i class="fa fa-check fa-lg"></i>
+        </button>
+    </section>
+
+    <!-- A table of all incomes and expenses -->
+    <section class="details flex-center">
+        <div class="income">
+            <p>INCOME</p>
+
+            <table>
+                <tbody>
+                    <tr class="income-item">
+                        <td>Salary</td>
+                        <td>+2,500.00</td>
+                        <td class="income-item-remove-button">
+                            <button>
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="income-item">
+                        <td>Freelance</td>
+                        <td>+500.00</td>
+                        <td class="income-item-remove-button">
+                            <button>
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="expenses">
+            <p>EXPENSES</p>
+
+            <table>
+                <tbody>
+                    <tr class="expenses-item">
+                        <td class="expenses-item-description">Food</td>
+                        <td class="expenses-item-value">-500.00</td>
+                        <td class="expenses-item-percentage">20%</td>
+                        <td class="remove-button">
+                            <button>
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="expenses-item">
+                        <td>Iphone x</td>
+                        <td>-1,000.00</td>
+                        <td>20%</td>
+                        <td class="income-item-remove-button">
+                            <button>
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
